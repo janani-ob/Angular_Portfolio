@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,12 +13,13 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
-import { PlayerListComponent } from './player-list/player-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RestApiComponent } from './rest-api/rest-api.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayerListComponent
+    RestApiComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,10 +32,9 @@ import { PlayerListComponent } from './player-list/player-list.component';
     MatButtonModule,
     MatProgressBarModule,
     MatGridListModule,
-    MatInputModule
-
-   
-
+    MatInputModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
