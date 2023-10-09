@@ -56,7 +56,6 @@ a:hover {
     border: .5rem solid rgb(192, 6, 68);
     border-radius: .2rem;
     box-shadow: 0 .25rem 1rem rgb(230, 178, 178);
-
 }
 
 .img-fluid1 {
@@ -66,28 +65,24 @@ a:hover {
     border: .75rem solid rgb(192, 6, 68);
     border-radius: .25rem;
     box-shadow: 0 .25rem 1rem rgb(230, 178, 178);
-
 }
 
-
 .img-fluid2 {
-    height: 200px;
-    width: 250px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 1rem;
     object-fit: cover;
-    border: .5rem solid #ffcc00;
+    border: .25rem solid #ffcc00;
     border-radius: .25rem;
     box-shadow: 0 .25rem 1rem rgb(230, 178, 178);
-
 }
 
 .box-container {
     color: white;
-
 }
 
 .box-container .box p {
     color: white;
-
 }
 
 .box-container h3 {
@@ -233,8 +228,6 @@ a:hover {
     width: 11rem;
 }
 
-
-
 @media(min-width:768px) {
     .news-input {
         width: 50%;
@@ -276,8 +269,8 @@ a:hover {
 
 }
 
-@media(max-width:576px){
-    #skills .skills__bar{
+@media(max-width:576px) {
+    #skills .skills__bar {
         text-align: left !important;
     }
 }
